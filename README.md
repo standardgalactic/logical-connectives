@@ -4,8 +4,8 @@ Various logical operators and connectives
 Here is a chart of the sixteen binary operators you mentioned, with the numbering in binary from 0000 (bottom) to 1111 (top):
 
 Binary	Operator Name	Symbol
-0000	Bottom (Contradiction)	⊥
-0001	Nor	↓
+1. 0000	Bottom (Contradiction)	⊥
+1. 0001	Nor	↓
 0010	Converse nonimplication	↚
 0011	Not A	~A
 0100	Nonimplication ↛
