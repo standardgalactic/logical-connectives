@@ -8,7 +8,7 @@ Binary	Operator Name	Symbol
 0001	Nor	↓
 0010	Converse nonimplication	↚
 0011	Not A	~A
-0100	Nonimplication	↛
+0100	Nonimplication ↛
 0101	Not B	~B
 0110	Xor	↮
 0111	Nand	↑
