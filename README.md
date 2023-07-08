@@ -13,7 +13,7 @@ Binary	Operator Name	Symbol
 1. 0110	Xor	↮
 1. 0111	Nand	↑
 1. 1000	And	∧
-1. 1001	Equivalence (If and only if)	↔
+1. 1001	Equivalence (Iff)	↔
 1. 1010	B	B
 1. 1011	Implication (If then)	→
 1. 1100	A	A
