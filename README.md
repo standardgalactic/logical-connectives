@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-# logical-connectives
-Various logical operators and connectives
-=======
-# logical-connectives
-Various logical operators and connectives
+# Logical Connectives
 
-Here is a chart of the sixteen binary operators you mentioned, with the numbering in binary from 0000 (bottom) to 1111 (top):
+<!--
+Various logical operators and connectives
 
 Binary	Operator Name	Symbol
 1. 0000	Bottom (Contradiction)	⊥
@@ -24,11 +20,16 @@ Binary	Operator Name	Symbol
 1. 1101	Converse implication	←
 1. 1110	Or	∨
 1. 1111	Top (Tautology)	⊤
+-->
 
+<p align="center">
+  <img src="hasse-venn-diagram.jpg" width="1000px"/>
+  <p align="center"><i>The Sixteen Boolean Logic Functions of Two-Input Systems</i></p>
+</p>
 
-
+<!--
 <p align="center">
   <img src="logical-sudoku.jpg" width="1000px"/>
   <p align="center"><i>Logical Operator Sudoku</i></p>
 </p>
->>>>>>> fd4eb357ef1b2727b9e31d55fe2af14433493ed4
+-->
