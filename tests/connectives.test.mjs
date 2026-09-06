@@ -17,8 +17,10 @@ assert.deepEqual(
   [0, 1, 2, 3, 4].map(rank => Array.from(functions, f => f.bits).filter(bits => [...bits].filter(bit => bit === '1').length === rank).length),
   [1, 4, 6, 4, 1]
 )
-assert.equal(functions.find(f => f.name === 'AND').bits, '1000')
-assert.equal(functions.find(f => f.name === 'OR').bits, '1110')
+assert.equal(functions.find(f => f.name === 'AND').bits, '0001')
+assert.equal(functions.find(f => f.name === 'OR').bits, '0111')
+assert.equal(functions.find(f => f.name === 'NAND').bits, '1110')
+assert.equal(functions.find(f => f.name === 'NOR').bits, '1000')
 assert.equal(functions.find(f => f.name === 'XOR').bits, '0110')
 assert.equal(functions.find(f => f.name === 'Equivalence').bits, '1001')
 assert.ok(functions.every(f => /^[01]{4}$/.test(f.bits)))
