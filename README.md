@@ -1,35 +1,30 @@
 # Logical Connectives
 
-<!--
-Various logical operators and connectives
+Every Boolean function of two inputs can be written as a four-bit output
+column. The sixteen possible columns are the vertices of the Boolean
+tesseract Q₄ and form the rank structure 1–4–6–4–1.
 
-Binary	Operator Name	Symbol
-1. 0000	Bottom (Contradiction)	⊥
-1. 0001	Nor	↓
-1. 0010	Converse nonimplication	↚
-1. 0011	Not A	~A
-1. 0100	Nonimplication ↛
-1. 0101	Not B	~B
-1. 0110	Xor	↮
-1. 0111	Nand	↑
-1. 1000	And	∧
-1. 1001	Equivalence (Iff)	↔
-1. 1010	B	B
-1. 1011	Implication (If then)	→
-1. 1100	A	A
-1. 1101	Converse implication	←
-1. 1110	Or	∨
-1. 1111	Top (Tautology)	⊤
--->
+![The Sixteen Boolean Logic Functions of Two-Input Systems](hasse-venn-diagram.jpg)
 
-<p align="center">
-  <img src="hasse-venn-diagram.jpg" width="1000px"/>
-  <p align="center"><i>The Sixteen Boolean Logic Functions of Two-Input Systems</i></p>
-</p>
+## Interactive field guide
 
-<!--
-<p align="center">
-  <img src="logical-sudoku.jpg" width="1000px"/>
-  <p align="center"><i>Logical Operator Sudoku</i></p>
-</p>
--->
+The dependency-free site in `docs/` turns the tesseract into an interactive
+catalogue. Every connective has one canonical four-bit definition from which
+the index card, prose description, truth table, and live evaluator are
+generated. This keeps the explanation and executable behaviour aligned.
+
+Open `docs/index.html` directly, or serve the repository root with any static
+file server and visit `/docs/`. Run the catalogue check with:
+
+```sh
+node tests/connectives.test.mjs
+```
+
+The site is an interactive companion to *The Geometry of Expressibility:
+Logic at the Corners of a Continuous Relational Space*, originally developed
+under the title *From NAND to Xanadu*.
+
+The complete three-input Boolean-function space has 2⁸ = 256 vertices and is
+therefore Q₈. Any Q₄ → Q₅ extension denotes one additional independent
+coordinate on the two-input function space rather than the complete
+three-input function space.
