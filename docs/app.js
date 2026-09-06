@@ -2,20 +2,20 @@ const rows = [[0,0], [0,1], [1,0], [1,1]]
 
 const functions = [
   { bits:'0000', name:'Contradiction', symbol:'⊥', expr:'Y = 0', short:'Always false' },
-  { bits:'0001', name:'NOR', symbol:'↓', expr:'Y = ¬(A ∨ B)', short:'Neither input' },
-  { bits:'0010', name:'Converse nonimplication', symbol:'↚', expr:'Y = ¬A ∧ B', short:'B without A' },
-  { bits:'0011', name:'NOT A', symbol:'¬A', expr:'Y = ¬A', short:'Complement of A' },
-  { bits:'0100', name:'Nonimplication', symbol:'↛', expr:'Y = A ∧ ¬B', short:'A without B' },
-  { bits:'0101', name:'NOT B', symbol:'¬B', expr:'Y = ¬B', short:'Complement of B' },
+  { bits:'0001', name:'AND', symbol:'∧', expr:'Y = A ∧ B', short:'Both inputs' },
+  { bits:'0010', name:'Nonimplication', symbol:'↛', expr:'Y = A ∧ ¬B', short:'A without B' },
+  { bits:'0011', name:'A', symbol:'A', expr:'Y = A', short:'Pass A through' },
+  { bits:'0100', name:'Converse nonimplication', symbol:'↚', expr:'Y = ¬A ∧ B', short:'B without A' },
+  { bits:'0101', name:'B', symbol:'B', expr:'Y = B', short:'Pass B through' },
   { bits:'0110', name:'XOR', symbol:'⊕', expr:'Y = A ⊕ B', short:'Inputs differ' },
-  { bits:'0111', name:'NAND', symbol:'↑', expr:'Y = ¬(A ∧ B)', short:'Not both inputs' },
-  { bits:'1000', name:'AND', symbol:'∧', expr:'Y = A ∧ B', short:'Both inputs' },
+  { bits:'0111', name:'OR', symbol:'∨', expr:'Y = A ∨ B', short:'Either input' },
+  { bits:'1000', name:'NOR', symbol:'↓', expr:'Y = ¬(A ∨ B)', short:'Neither input' },
   { bits:'1001', name:'Equivalence', symbol:'↔', expr:'Y = A ↔ B', short:'Inputs agree' },
-  { bits:'1010', name:'B', symbol:'B', expr:'Y = B', short:'Pass B through' },
-  { bits:'1011', name:'Implication', symbol:'→', expr:'Y = A → B', short:'If A, then B' },
-  { bits:'1100', name:'A', symbol:'A', expr:'Y = A', short:'Pass A through' },
-  { bits:'1101', name:'Converse implication', symbol:'←', expr:'Y = B → A', short:'If B, then A' },
-  { bits:'1110', name:'OR', symbol:'∨', expr:'Y = A ∨ B', short:'Either input' },
+  { bits:'1010', name:'NOT B', symbol:'¬B', expr:'Y = ¬B', short:'Complement of B' },
+  { bits:'1011', name:'Converse implication', symbol:'←', expr:'Y = B → A', short:'If B, then A' },
+  { bits:'1100', name:'NOT A', symbol:'¬A', expr:'Y = ¬A', short:'Complement of A' },
+  { bits:'1101', name:'Implication', symbol:'→', expr:'Y = A → B', short:'If A, then B' },
+  { bits:'1110', name:'NAND', symbol:'↑', expr:'Y = ¬(A ∧ B)', short:'Not both inputs' },
   { bits:'1111', name:'Tautology', symbol:'⊤', expr:'Y = 1', short:'Always true' },
 ]
 
@@ -101,7 +101,7 @@ function bitButton(label, value) {
 }
 
 function openGate(bits, push = true) {
-  selected = functions.find(fn => fn.bits === bits) || functions[8]
+  selected = functions.find(fn => fn.bits === bits) || functions[1]
   intro.hidden = true
   catalog.hidden = true
   detail.hidden = false
