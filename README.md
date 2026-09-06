@@ -23,6 +23,8 @@ node tests/connectives.test.mjs
 The site is an interactive companion to *The Geometry of Expressibility:
 Logic at the Corners of a Continuous Relational Space*, originally developed
 under the title *From NAND to Xanadu*.
+The complete LaTeX manuscript is available at
+[essay/geometry-of-expressibility.tex](essay/geometry-of-expressibility.tex).
 
 The complete three-input Boolean-function space has 2⁸ = 256 vertices and is
 therefore Q₈. Any Q₄ → Q₅ extension denotes one additional independent
