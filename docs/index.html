@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explore all sixteen Boolean functions of two inputs through symbols, truth tables, and live signals.">
+  <title>Logical Connectives</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="icon-button back" type="button" aria-label="Return to connective index">←</button>
+    <div>
+      <p class="eyebrow">Two-input Boolean systems</p>
+      <h1>Logical Connectives</h1>
+    </div>
+    <button class="icon-button lattice-button" type="button" aria-label="Show all connectives">⠿</button>
+  </header>
+
+  <main>
+    <section class="intro" aria-labelledby="intro-title">
+      <p class="kicker">The Geometry of Expressibility</p>
+      <h2 id="intro-title">Sixteen ways for two bits to become one.</h2>
+      <p>Every four-bit truth table is a vertex of the Boolean tesseract Q₄. Explore its 1–4–6–4–1 rank structure, then open a vertex to inspect or operate its connective.</p>
+    </section>
+
+    <section class="catalog" aria-label="Connective index"></section>
+
+    <article class="detail" hidden>
+      <nav class="tabs" aria-label="Connective views">
+        <button type="button" class="tab active" data-view="description" aria-selected="true">Description</button>
+        <button type="button" class="tab" data-view="live" aria-selected="false">Live</button>
+      </nav>
+      <section class="description-view"></section>
+      <section class="live-view" hidden></section>
+    </article>
+  </main>
+
+  <footer>
+    <p>An interactive companion to “The Geometry of Expressibility.”</p>
+    <a href="https://github.com/standardgalactic/logical-connectives">Source on GitHub</a>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>
