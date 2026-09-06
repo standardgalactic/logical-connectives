@@ -1,0 +1,129 @@
+\documentclass[11pt]{article}
+\usepackage{fontspec}
+\IfFontExistsTF{TeX Gyre Pagella}{\setmainfont{TeX Gyre Pagella}}{\setmainfont{DejaVu Serif}}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1.15in]{geometry}
+\usepackage{microtype}
+\usepackage[colorlinks=true,linkcolor=black,citecolor=black,urlcolor=black]{hyperref}
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\large\bfseries}{\Roman{section}.}{0.6em}{}
+\newtheorem*{principle}{Governing Distinction}
+
+\title{\textbf{From NAND to Xanadu: Logic at the Corners of a Continuous Relational Space}}
+\author{Flyxion \\ \textit{Independent Researcher}}
+\date{2026}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+\noindent Binary logic is not the complete form of relational thought but an extremal simplification of it. The sixteen functions of two-variable Boolean logic occupy the vertices of a four-dimensional hypercube; Bayesian conditioning fills its probabilistic interior; higher-dimensional document systems extend the same organizing intuition into cultural and archival space. Functional completeness explains what can be expressed from a minimal logical basis, while hypercubic and Xanadu-like systems address a separate question: how a large relational field can be navigated once it has been built. Neither expressibility nor navigability guarantees that traversing or constructing the resulting space is computationally, temporally, or thermodynamically feasible.
+\end{abstract}
+
+\section{NAND and the Ambiguity of Universality}
+
+NAND is functionally complete. Together with NOR, it is one of the two binary Sheffer functions: from NAND alone, using only composition, every finite Boolean function can be constructed. Functional completeness answers which basis suffices under unlimited composition. It does not answer what it costs to build the function whose existence it promises.
+
+The confusion arises because functional completeness resembles Turing completeness in cadence but not substance. A Turing-complete system requires memory, control flow, and unbounded composition over time. A gate is a static combinational element; a computer is a temporally extended, resource-bounded machine built from gates, storage, and sequencing.
+
+\begin{principle}
+Universality establishes possibility within a formal system; it does not establish efficient or physically realizable construction.
+\end{principle}
+
+Circuit size, depth, fan-out, time, memory, heat dissipation, and reliability separate formal representation from realizable construction. A finite Boolean construction can be writable in principle while requiring more matter or time than the universe affords.
+
+\section{The Complete Space of Two-Variable Logic}
+
+A binary Boolean function is a map
+\[
+f:\{0,1\}^2\rightarrow\{0,1\}.
+\]
+Its four inputs are $(0,0)$, $(0,1)$, $(1,0)$, and $(1,1)$, and each output is chosen independently. Hence there are
+\[
+2^{2^2}=2^4=16
+\]
+functions. They comprise the constants, projections and their negations, conjunction and disjunction with their negations, both conditionals and their converses, exclusive-or, equivalence, and the two nonimplications. Assigning each truth table a glyph creates a hexadecimal alphabet for binary relations: a notation, not a new logic.
+
+\section{The Logical Tesseract}
+
+The sixteen functions are the vertices of
+\[
+Q_4=\{0,1\}^4,
+\]
+where each vertex is the output string in the fixed order $(00,01,10,11)$. Two vertices are adjacent precisely when their tables differ in one entry.
+
+Ranking by the number of true outputs gives
+\[
+1,\;4,\;6,\;4,\;1.
+\]
+Contradiction and tautology occupy the extremes. The rank-two layer consists of XOR, equivalence, the two projections, and the two nonimplications. Under pointwise order,
+\[
+f\leq g\Longleftrightarrow f(a,b)\leq g(a,b)\text{ for every }(a,b),
+\]
+the tesseract is the Hasse diagram of the Boolean lattice $B_4$. Output negation is an order-reversing involution pairing contradiction with tautology, AND with NAND, OR with NOR, and XOR with equivalence.
+
+\section{Pulling Apart the Hypercube}
+
+Fixing one truth-table coordinate divides the functions into two cubes joined pointwise:
+\[
+Q_4=Q_3\,\square\,K_2.
+\]
+Generally,
+\[
+|V(Q_n)|=2^n,\qquad |E(Q_n)|=n2^{n-1},\qquad
+f_k(Q_n)=\binom{n}{k}2^{n-k}.
+\]
+Thus $Q_4$ has sixteen vertices, thirty-two edges, twenty-four square faces, and eight cubic cells.
+
+\section{Boolean Logic as the Boundary of Bayesian Conditioning}
+
+For binary $Y$ with binary parents $A$ and $B$, a conditional mechanism is
+\[
+p=\bigl(P(Y{=}1\mid00),P(Y{=}1\mid01),P(Y{=}1\mid10),P(Y{=}1\mid11)\bigr)\in[0,1]^4.
+\]
+A Boolean mechanism restricts each coordinate to an endpoint. The sixteen functions are exactly the extreme points of this continuous conditional space. For example,
+\[
+(0.02,\ 0.15,\ 0.20,\ 0.91)
+\]
+is a soft AND near the conjunction corner, not a classical connective.
+
+\section{Convex Mixtures and the Recovery of the Interior}
+
+Every conditional table is a convex mixture of deterministic vertices:
+\[
+p=\sum_{v\in\{0,1\}^4}\lambda_vv,\qquad
+\lambda_v\geq0,\qquad\sum_v\lambda_v=1,
+\]
+although the decomposition need not be unique. Probability fills the space whose extreme boundary Boolean logic defines. Deterministic gates can also yield intermediate marginal beliefs when their root inputs are uncertain, separating mechanism from belief.
+
+\section{From Tesseract to Penteract}
+
+A penteract is two linked tesseracts,
+\[
+Q_5=Q_4\,\square\,K_2.
+\]
+As an organizational experiment, one tesseract may hold axiological works and another technological metatheories, with the fifth coordinate pairing corresponding positions. This is useful only when axes encode explicit, independent distinctions; otherwise dimensionality is merely decorative. This organizational $Q_5$ must not be confused with the complete Boolean-function space for three binary parents: its eight truth-table coordinates form $Q_8$, with $2^8=256$ vertices.
+
+\section{Hypercubic Publishing and the Xanadu Ideal}
+
+A book imposes sequence and a directory hierarchy. A hypercubic corpus permits documents to participate in several independent relations simultaneously. Project Xanadu is the publishing analogue: documents are relational objects assembled from addressable fragments and connected by links, provenance, quotation, and transclusion.
+
+An image grid can be a flattened projection of a larger cultural network. The grid is the visible surface; a graph captures pairwise links; a hypergraph captures relations involving several works; and a hypercube is warranted only when relations resolve into independent binary coordinates.
+
+\section{The Reading Room as a Projected Corpus}
+
+A reading-room interface compresses repositories, texts, projects, and voices into a browsable surface. Search, shelving, provenance, wandering, and readable transformations are different projections of the same corpus. A glyph names a truth table and a shelf tile names a larger body of work: neither contains everything it represents, but each provides a coordinate through which the larger structure can be entered.
+
+\section{Expressibility, Navigation, and Cost}
+
+Expressibility asks whether a basis represents every object in a formal class; NAND answers this for finite Boolean functions under composition. Geometry asks how represented objects relate; the logical tesseract supplies adjacency, rank, complementation, and recursive decomposition. Navigation asks how an agent moves through a relational corpus; Xanadu-style linking and reading-room interfaces address this for documents.
+
+None settles cost. A representable function may be computationally prohibitive, a coordinate system cognitively unusable, and a linked archive too expensive to maintain or preserve. Thermodynamic and computational costs must be argued or measured independently of formal completeness.
+
+\section{Conclusion: The Interior Matters}
+
+Boolean logic occupies the hard corners of a continuous space rather than the whole of it. The corners define extremal mechanisms and supply the combinatorial structure that makes the space intelligible, but they exclude uncertainty, gradation, mixture, incomplete evidence, and resource constraints.
+
+A richer cultural corpus likewise permits overlapping locations, probabilistic association, contextual relevance, and multiple paths. Boolean logic defines the vertices. Bayesian inference fills the interior. Hypercubic organization supplies the coordinates. Xanadu supplies the links. Physical computation determines how much can actually be traversed.
+
+\end{document}
